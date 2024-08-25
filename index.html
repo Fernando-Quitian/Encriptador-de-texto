@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/Logo.png" alt="Logo Alura Latam">
+        <h1>Convertidor de Texto a Cifrado</h1>
+    </header>
+    <main>
+        <section class="encriptador">
+            <textarea class="inputTexto" name="entradaDeDatos" id="inputTexto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encriptar-advertencia">
+                <img src="./assets/aviso.svg" alt="Imagen Advertencia">
+                <p class="advertencia">Solo letras minusculas y sin acentos.</p>
+            </div>
+            <div class="encriptar-botones">
+                <button id="btnEncriptar" class="Encriptar">Encriptar!</button>
+                <button id="btnDesencriptar" class="Desencriptar">Desencriptar!</button>
+            </div>
+        </section>
+        <section class="desencriptador">
+            <div class="desencriptador-contenedor">
+                <img class="img-personaje" src="./assets/muñeco.svg" alt="imagen Personaje">
+                <p class="texto1">Ningún mensaje fue encontrado</p>
+                <p class="texto2">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+            <div class="dinamico">
+                <textarea id="outputTexto" class="salida-texto" type="mensaje" readonly></textarea> 
+                <div id="resultado">
+                    <p id="texto-salida" class="texto-salida"></p>
+                </div> 
+                <button id="boton-copiar" onclick="copiarTexto()" class="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer-copy">&copy; copyright 2024 - Encriptador de Texto - desarrollado por Fernando Quitian</p>
+        <div class="footer-logo">
+            <a href="#" target="_blank">
+                <img class="logo1"  src="./assets/linkedin.svg" alt="Logo Linkedin">
+            </a>
+            <a href="#" target="_blank">
+                <img class="logo2"  src="./assets/github.svg" alt="Logo GitHub">
+            </a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
